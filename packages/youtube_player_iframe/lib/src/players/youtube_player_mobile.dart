@@ -143,9 +143,7 @@ class _MobileYoutubePlayerState extends State<RawYoutubePlayer>
             controller.load(uri.queryParameters['v']!);
           }
         } else {
-          if (Platform.isIOS) {
-            return NavigationActionPolicy.ALLOW;
-          }
+          return NavigationActionPolicy.ALLOW;
         }
         return NavigationActionPolicy.CANCEL;
       },
